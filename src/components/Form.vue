@@ -1,17 +1,17 @@
 <template>
     <div class="Form">
-        <form method="post" action="/node_form">
+        <form method="post" action="http://localhost:1234/users">
             <div class="Form-input">
-                <label for="name">Name</label>
-                <input type="text" id="name"/>
+                <label for="fullname">Name</label>
+                <input type="text" id="fullname" name="fullname"/>
             </div>
             <div class="Form-input">
                 <label for="email">Email</label>
-                <input type="email" id="email"/>
+                <input type="email" id="email" name="email"/>
             </div>
             <div class="Form-input">
                 <label for="link">Github link</label>
-                <input type="text" id="link"/>
+                <input type="text" id="link" name="github"/>
             </div>
             <input type="submit"/>
         </form>
@@ -21,7 +21,7 @@
 <script>
   export default {
     name: 'node-form',
-    props: {}
+    props: {},
   }
 </script>
 

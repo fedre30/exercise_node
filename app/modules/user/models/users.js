@@ -3,30 +3,25 @@ const Joi = require('joi');
 
 const Schema = mongoose.Schema;
 
-const MySchema = mongoose.Schema = new Schema({
-  name: { type: String, index: true },
+const MySchema = new Schema({
+  fullname: { type: String, index: true },
   email: { type: String, index: true },
-  link: { type: String, index: true }
+  github: { type: String, index: true }
 });
 
-const Validation: Array<any> = [
+const Validation = [
   Joi.object().keys({
-    name: Joi.string().required().label('Name'),
+    fullname: Joi.string().required().label('Fullname'),
     email: Joi.string().email().label('Email'),
-    link: Joi.string().required().label('Link')
+    github: Joi.string().required().label('Github')
   }),
 ];
 
-const Formatting: Array<any> = [];
 
-const Completion: Array<any> = [];
-
-const Model: mongoose.Model = mongoose.model('User', MySchema);
+const Model = mongoose.model('User', MySchema);
 
 module.exports = {
   Model,
   Validation,
-  Formatting,
-  Completion,
   Name: 'User',
 };
