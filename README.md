@@ -4,7 +4,8 @@ By Federica Alfano
 
 ## Run
 
-```yarn run serve```
+Vue.js : ```yarn run serve```
+Node server: ```node app/app.js
 
 ## Features
 
