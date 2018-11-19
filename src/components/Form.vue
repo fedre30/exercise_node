@@ -1,6 +1,6 @@
 <template>
     <div class="Form">
-        <form>
+        <form method="post" action="/node_form">
             <div class="Form-input">
                 <label for="name">Name</label>
                 <input type="text" id="name"/>
