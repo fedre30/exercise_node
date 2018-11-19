@@ -5,7 +5,9 @@ By Federica Alfano
 ## Run
 
 Vue.js : ```yarn run serve```
-Node server: ```node app/app.js
+
+
+Node server: ```node app/app.js```
 
 ## Features
 
