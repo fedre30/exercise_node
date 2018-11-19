@@ -1,5 +1,11 @@
 # Exercise Node
 
+By Federica Alfano
+
+## Run
+
+```yarn run serve```
+
 ## Features
 
 * Backend form validation
